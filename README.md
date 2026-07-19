@@ -7,3 +7,7 @@
 
 3) Progress unclear when converting animated GIFs to video
  #80325
+4) [Snyk] Security upgrade jquery-rails from 4.3.1 to 4.3.2
+#182
+5) [Enhancement]: FRT-D2-152-G1 McMaster part substitution
+ #1240
