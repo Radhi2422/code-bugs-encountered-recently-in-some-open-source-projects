@@ -1,0 +1,43 @@
+name: Close Stale Issues
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Close Stale Issues
+        uses: actions/stale@v9
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+          stale-issue-message: >
+            This issue has been automatically marked as stale because it has
+            not had any recent activity.
+
+          close-issue-message: >
+            Closing this issue due to inactivity. Feel free to reopen it if
+            the problem still exists.
+
+          stale-pr-message: >
+            This pull request has been marked as stale.
+
+          close-pr-message: >
+            Closing this pull request because it has been inactive.
+
+          days-before-stale: 30
+          days-before-close: 7
+
+          stale-issue-label: stale
+          exempt-issue-labels: pinned,security
+
+          remove-stale-when-updated: true
