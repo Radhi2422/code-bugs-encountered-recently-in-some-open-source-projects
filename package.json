@@ -1,0 +1,27 @@
+{
+  "name": "issue-management-bot",
+  "version": "1.0.0",
+  "description": "A GitHub Actions bot that automatically labels, assigns, welcomes contributors, and manages GitHub issues.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js"
+  },
+  "keywords": [
+    "github-actions",
+    "github-bot",
+    "automation",
+    "octokit",
+    "nodejs",
+    "github-api",
+    "issue-management"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
