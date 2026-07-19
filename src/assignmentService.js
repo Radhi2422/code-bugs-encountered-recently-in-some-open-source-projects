@@ -3,7 +3,7 @@ const { assign } = require("./githubService");
 async function assignIssue(issueNumber) {
 
     const reviewers = [
-        "your-github-username"
+        "Radhi2422"
     ];
 
     await assign(issueNumber, reviewers);
