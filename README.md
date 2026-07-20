@@ -11,3 +11,5 @@
 #182
 5) [Enhancement]: FRT-D2-152-G1 McMaster part substitution
  #1240
+6) Split TestBean into its GUI-generation and field-storage halves
+ #6728
